@@ -1,0 +1,417 @@
+*{
+    margin:  0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(banner.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+.navbar{
+    width:100%;
+    margin:auto;
+    padding: 14px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    background-color: #00000096;
+}
+#logo{
+    color: greenyellow;
+    cursor: pointer;
+    font-size: 23px;
+    box-shadow: 0px 0px 12px greenyellow;
+    padding: 5px 10px;
+}
+#logo a{
+    text-decoration: none;
+    color: greenyellow;
+}
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+    position: relative;
+}
+
+.options li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease 0s;
+}
+.options li a:hover{
+    background-color: yellowgreen;
+    border-radius: 50px;
+    padding: 12px;
+}
+
+.registraion li a{
+    text-decoration: none;
+    color: black;
+}
+
+.content{
+   color: white;
+   position: relative;
+   top:60%;
+   transform: translateY(-50%);
+   text-align: center;
+}
+.content h1{
+    font-size: 80px;
+    
+}
+.content p{
+    margin: 20px auto;
+    line-height: 25px;
+}
+.banner button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 5px;
+    color: white;
+    border:2px solid greenyellow;
+    background: transparent;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+span{
+    background: greenyellow;
+    height: 100%;
+    width: 0;
+    border-radius: 30px;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1.3s;
+}
+.banner button:hover span{
+    width: 100%;
+
+}
+.banner button:hover{
+    border:none;
+}
+.registraion li a{
+    width: 50px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: black;
+    transition: all 0.5s ease 0s;
+}
+.registraion li a:hover{
+    background-color: yellow;
+    box-shadow: 0px 0px 10px yellow;
+    
+}
+
+/*About Us Section*/
+.aboutUs{
+    width: 100%;
+    
+
+}
+.aboutUs h1{
+    font-size: 70px;
+    margin-top: 75px;
+    color: #00cc0a;
+    box-shadow: 0px 0px 20px greenyellow;
+    margin-right: 100px;
+    padding: 20px ;
+    margin-left: 100px;
+    border-radius: 20px;
+    
+
+}
+
+
+
+ .aboutUs p{
+    margin-top: 20px;
+    margin-left: 110px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    padding-right: 100px;
+    line-height: 50px;
+    
+}
+
+/*Event Section*/
+.eventHead{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00cc0a;
+    font-size:40px;
+    box-shadow: 0px 0px 20px greenyellow;
+    margin-right: 145px;
+    margin-left: 145px;
+    padding: 10px ;
+    border-radius: 20px;
+
+}
+.events{
+    margin: 40px 110px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    grid-gap: 20px;
+    
+}
+.eventCards{
+    margin: 20px 30px;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px black;
+    display: inline-block;
+    justify-content: center;
+    line-height: 50px;
+    color: white;
+    border: 5px solid greenyellow;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    
+}
+#pic1{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(food.jpeg);
+    background-size: 450px 360px;
+
+}
+#pic2{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(medicine.jpeg);
+    background-size: 280px 350px;
+}
+#pic3{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(cosmetics.jpeg);
+    background-size: 450px 350px;
+}
+#pic4{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(smart.jpeg);
+    background-size: 450px 350px;
+}
+#pic5{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(sustainable.jpeg);
+    background-size: 450px 350px;
+}
+#pic6{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(packmaterials.jpeg);
+    background-size: 450px 400px;
+}
+.eventCards:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 0px 15px black;
+}
+.eventCards h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+.eventCards p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.eventCards button{
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+
+}
+
+.eventCards button:hover{
+    transform:translateX(22px)
+    
+}
+.eventCards button a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Speaker Section*/
+.developers h1{
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00cc0a;
+    font-size: 70px;
+    box-shadow: 0px 0px 20px greenyellow;
+    margin-right: 108px;
+    margin-left: 108px;
+    padding: 10px ;
+    border-radius: 20px;
+
+
+}
+
+.devsection{
+    margin: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    grid-gap: 10px;
+}
+
+.devCards{
+    border:5px solid green;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px black;
+    margin: 10px;
+    padding: 20px;
+    cursor: pointer;
+    line-height: 40px;
+    transition: all 0.5s ease 0s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.devCards a{
+    text-decoration: none;
+    color: black;
+}
+
+.devCards:hover{
+    transform: 1.2x;
+    box-shadow: 0px 12px 20px black;
+    background-color:rgb(217, 255, 161);
+}
+
+
+.devCards img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: 5px solid green;
+    box-shadow: 0px 0px 10px black;
+    
+}
+
+.devCards h2{
+    font-family: 'Poppins', sans-serif;
+    color: #006e25;
+}
+
+.devCards p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5px;
+}
+
+.devCards button{
+    background-color: greenyellow;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: green;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+
+}
+
+.devCards button:hover{
+    transform: 1.5x;
+    background-color: green;
+    color: white;
+}
+/* Venue Section */
+.venuesec{
+    margin:80px 100px 80px 100px;
+    padding: 30px;
+    border: 5px solid greenyellow;
+    border-radius: 20px;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(ju.jfif);
+    box-shadow: 0px 0px 15px black;
+    
+}
+
+.venuesec h1{
+    font-family: 'Poppins', sans-serif;
+    color: #00cc0a;
+}
+.venuesec h3{
+    font-family: 'Poppins', sans-serif;
+    color: #3bff45;
+}
+.venuesec p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-break: 3px;
+    color: white;
+}
+.venuesec h2{
+    color: rgb(0, 190, 0);
+}
+
+/*Footer Section*/
+.footer{
+    background-color: #24262b;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    
+}
+.footersection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerCol{
+    display: inline-block;
+    padding: 30px;
+    justify-content: space-between;
+    line-height: 50px;
+    text-align: center;
+
+}
+#midfoot{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.footerCol h2{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.footerCol li {
+    list-style: none;
+    color: rgb(216, 216, 216);
+    transition: all 0.5s ease 0s;
+}
+.footerCol li :hover{
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px black;
+    
+    
+}
+
+.footerCol li a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+

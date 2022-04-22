@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PackageMaster_Login</title>
+      <link rel="stylesheet" href="login.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="formSec" >
+            <div class="slideSec">
+               <div id="btn"></div>
+               <button type="button" class="slidebtn" onclick="login()">Log In</button> <button type="button" class="slidebtn" onclick="signin()">Sign In</button> 
+            </div>
+            <form class="inputSec" id="login"> <input type="text" class="input" placeholder="UserId required"> <input type="password" class="input" placeholder="Password required"> <input type="checkbox" class="checkSec"><span>Remember Password</span> <button type="submit" class="submitbtn">Log In</button> </form>
+            <form class="inputSec" id="signin"> <input type="text" class="input" placeholder="UserId required"> <input type="email" class="input" placeholder="Email Id required"> <input type="checkbox" class="checkSec"><span>I agree to the Term and Conditions</span> <button type="submit" class="submitbtn">Sign In</button> </form>
+         </div>
+      </div>
+      <script>
+      let x=document.getElementById("login");
+       let y=document.getElementById("signin"); 
+       let z=document.getElementById("btn"); 
+       function login(){x.style.left="50px";
+         y.style.left="-430px";
+         z.style.left="0px"}
+         
+         function signin(){x.style.left="-4300px"; 
+         y.style.left="50px"; z.style.left="110px"}
+      </script>
+   </body>
+</html>
